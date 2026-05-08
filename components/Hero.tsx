@@ -149,7 +149,7 @@ export default function Hero({ openModal }: HeroProps) {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
             className="relative w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
           >
-            <div className="relative w-full aspect-[3/4] rounded-sm overflow-hidden">
+            <div className="relative w-full aspect-[3/4] rounded-sm overflow-hidden bg-brand-gray-dark">
               <Image
                 src="/madison.jpg"
                 alt="Madison Adams — Freelance TV News Reporter"
@@ -157,6 +157,7 @@ export default function Hero({ openModal }: HeroProps) {
                 priority
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
               />
 
               {/* Dark overlay at bottom for editorial feel */}
