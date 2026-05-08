@@ -1,6 +1,6 @@
 "use client";
 
-// Place madison.jpg in /public/ — download her photo from missbreakingnews.com
+// Place blondie.jpg in /public/
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -151,7 +151,7 @@ export default function Hero({ openModal }: HeroProps) {
           >
             <div className="relative w-full aspect-[3/4] rounded-sm overflow-hidden bg-brand-gray-dark">
               <Image
-                src="/madison.jpg"
+                src="/blondie.jpg"
                 alt="Madison Adams — Freelance TV News Reporter"
                 fill
                 priority
